@@ -1,0 +1,9 @@
+<div style="border:1px dashed #999; padding:10px; margin:10px 0;">
+    <p>Text truyền vào: <strong>{{ text }}</strong></p>
+    
+    {% if note %}
+        <small>Ghi chú: {{ note }}</small>
+    {% else %}
+        <small>Không có ghi chú:</small>
+    {% endif %}
+</div>
