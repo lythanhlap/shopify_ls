@@ -1,0 +1,132 @@
+.brand-story {
+  padding: 6rem 0;
+}
+
+.brand-story__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 6rem;
+  /* align-items: center; */
+}
+
+/* left side */
+
+.brand-story__our_story_title {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.brand-story__heading {
+  font-size: clamp(3.2rem, 4vw, 5.2rem);
+  line-height: 1.1;
+  margin-bottom: 1.6rem;
+}
+
+.brand-story__description {
+  max-width: 42rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.brand-story__button {
+  margin-top: 2.4rem;
+}
+
+.brand-story__button a {
+  display: inline-block;
+  padding: 1.4rem 3rem;
+  background: #000;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.brand-story__button-text {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* right side */
+.brand-story__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.brand-story__images > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.brand-story__image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+
+.brand-story__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.brand-story__image--sm {
+  aspect-ratio: 1 / 1;
+}
+
+
+.brand-story__image-right {
+  height: 100%;
+}
+
+.brand-story__image--lg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.brand-story__image iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .brand-story__container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+
+  .brand-story__images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-story__images {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-story__heading {
+    font-size: 3rem;
+  }
+}

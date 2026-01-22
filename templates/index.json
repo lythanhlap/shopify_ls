@@ -36,6 +36,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/a-barista-smiles-proudly-stood-in-her-cafe.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
@@ -103,11 +104,71 @@
         "title": "Promotion 1",
         "title_alignment": "center"
       }
+    },
+    "a_tutorial_section_mETycU": {
+      "type": "a-tutorial-section",
+      "blocks": {
+        "section_collection_mmtdNj": {
+          "type": "section_collection",
+          "settings": {
+            "collection": "",
+            "title": "This is the first collection",
+            "image": "shopify://shop_images/fashion-model-in-pink.jpg"
+          }
+        },
+        "section_product_jUp9M6": {
+          "type": "section_product",
+          "settings": {
+            "product": "",
+            "title": "This is the first pproduct",
+            "image": "shopify://shop_images/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "section_collection_mmtdNj",
+        "section_product_jUp9M6"
+      ],
+      "name": "Section Tutorial",
+      "settings": {
+        "text_setting": "This is my text setting",
+        "textarea_setting": "This is text area",
+        "richtext_setting": "<p>Expertly Crafted Clothes f<em><strong>or Every Occasion.</strong></em></p>",
+        "number_setting": 4,
+        "range_setting": 50,
+        "select_setting": "value-1",
+        "checkbox_setting": false,
+        "radio_setting": "radio-1",
+        "color_Setting": "#4693dc",
+        "color_background_setting": "linear-gradient(88deg, rgba(246, 223, 231, 1), rgba(168, 255, 251, 1) 100%)",
+        "image_picker_setting": "shopify://shop_images/shellfish-pasta-pizza-and-italian-food.jpg",
+        "video_setting": "shopify://files/videos/Video_Gấu_Đứng_Dậy.mp4",
+        "video_url_setting": "https://www.youtube.com/watch?v=3n5sWA2ow1Q&list=PLsr48ksn9_9Bzii-fRXRTVAo3OPYTtMAU&index=5",
+        "url_setting": "",
+        "html_setting": "<strong> this is bold sectence </strong>",
+        "liquid_setting": "{{10 | plus: 10 }}",
+        "product_setting": "adidas-classic-backpack",
+        "product_list_Setting": [
+          "adidas-classic-backpack-legend-ink-multicolour",
+          "asics-tiger-gel-lyte-v-30-years-of-gel-pack",
+          "adidas-superstar-80s"
+        ],
+        "collection_setting": "adidas",
+        "collection_list_setting": [],
+        "page_setting": "about-us",
+        "article_setting": "",
+        "blog_setting": "",
+        "link_list_setting": "",
+        "alignment_setting": "center",
+        "font_picker": "assistant_n4",
+        "color_schema_setting": ""
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "promotions_group_BVT9M4"
+    "promotions_group_BVT9M4",
+    "a_tutorial_section_mETycU"
   ]
 }
