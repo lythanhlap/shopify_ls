@@ -1,0 +1,375 @@
+{{'a-section-tutorial.css' |  asset_url|stylesheet_tag}}
+
+{% comment %}
+  <p>Hello</p>
+
+  <h2>Text setting</h2>
+  <p>{{ section.settings.text_setting }}</p>
+
+  <h2>richtext setting</h2>
+  <div>{{ section.settings.richtext_setting }}</div>
+
+  <h2>Number setting</h2>
+  <p>{{ section.settings.number_setting }}</p>
+
+  <h2>Range Setting</h2>
+  <p>{{ section.settings.range_setting }}</p>
+
+  <h2>Select Setting</h2>
+  <div>{{ section.settings.select_setting }}</div>
+
+  <h2>Checkbox Setting</h2>
+  <p>{{ section.settings.checkbox_setting }}</p>
+
+  <h2>Radio Setting</h2>
+  <p>{{ section.settings.radio_setting }}</p>
+
+  <h2>Color Setting</h2>
+  <p style="color: {{section.settings.color_Setting}};">color picked</p>
+
+  <div style="background: {{section.settings.color_background_setting}}; ">
+    <h2>Color background setting</h2>
+    <p>{{ section.settings.color_background_setting }}</p>
+  </div>
+
+  <h2>Image Picker VAlue</h2>
+  {{ section.settings.image_picker_setting | image_url: width: 200 | image_tag }}
+
+  <h2>Video Setting</h2>
+  <div>
+    {{
+      section.settings.video_setting
+      | video_tag: controls: true, style: 'height: 300px; width: 500px', image_size: '300px'
+    }}
+  </div>
+
+  <div>
+    <h2>External Video URL</h2>
+    <iframe
+      src="https://youtube.com/embed/{{section.settings.video_url_setting}}"
+      frameborder="0"
+      allowfullscreen
+      allow="accelerometer"
+    ></iframe>
+  </div>
+
+  <h2>URL Setting</h2>
+  <a href="{{section.settings.url_setting}}">URL Setting here</a>
+
+  <h2>HTML Setting</h2>
+  <div>{{ section.settings.html_setting }}</div>
+
+  <h2>Liquid Setting</h2>
+  <div>{{ section.settings.liquid_setting }}</div>
+
+  <h2>Product Setting</h2>
+  <p>
+    {{ section.settings.product_setting }} |
+    {{ section.settings.product_setting.title }}
+  </p>
+
+  {% for product in section.settings.product_list_Setting %}
+    <p>{{ product.handle }}| {{ product.title }} - {{ product.price | money }}</p>
+  {% endfor %}
+
+  <h2>Collection Setting</h2>
+  <p>
+    {{ section.settings.collection_setting.handle }} |
+    {{ section.settings.collection_setting.title }}
+  </p>
+
+  <h2>Collection List Setting</h2>
+  {% for collection in section.settings.collection_list_setting %}
+    <p>{{ collection }} | {{ collection.all_products_count }} |{{ collection.title }}</p>
+  {% endfor %}
+
+  <h2>Page Setting</h2>
+  <p>{{section.settings.page_setting.title}}</p>
+
+  <h2>Article Setting</h2>
+  <p>{{section.settings.article_setting.title}}</p>
+
+  <h3>Blog Setting</h3>
+  <p>{{section.settings.blog_setting.title}}</p>
+
+  <h3>Link List Setting</h3>
+  <p>{{section.settings.link_list_setting.title}}</p>
+
+  <h3>Alignment Setting</h3>
+  <p style="text-align: {{section.settings.alignment_setting}};">Alignment text</p>
+
+  <h2>Font Setting</h2>
+  <p>Font setting: {{section.settings.font_picker.family}}</p>
+  {% style %}
+    {{section.settings.font_picker |font_face: font_display: 'swap'}}
+    .section-tutorial * {
+      font-family:{{section.settings.font_picker.family}}
+    }
+  {% endstyle %}
+{% endcomment %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'section_collection' %}
+    {% assign title = block.settings.title |  default: block.settings.collection.title %}
+  {% elsif block.type =="section_product" %}
+    {% assign title = block.settings.title |  default: block.settings.product.title %}
+  {% endif %}
+  <p>{{title}}</p>
+{% endfor %}
+
+{% if request.design_mode %}
+  <p>This is from theme editer</p>
+  
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Section tutorial",
+  "tag": "section",
+  "class": "section-tutorial",
+  "limit": 2,
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_setting",
+      "label": "Text setting",
+      "default": "This is a default setting",
+      "info": "Write text setting here"
+    },
+    {
+      "type": "textarea",
+      "id": "textarea_setting",
+      "label": "Textarea Setting",
+      "default": "This is text area",
+      "info": "This is area text",
+      "placeholder": "This is a text area"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext_setting",
+      "label": "Richtext Setting",
+      "info": "This is a richtext form"
+    },
+    {
+      "type": "number",
+      "id": "number_setting",
+      "label": "Number setting"
+    },
+    {
+      "type": "range",
+      "id": "range_setting",
+      "label": "Range Setting",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "select_setting",
+      "label": "Select Setting",
+      "options": [
+        {
+          "value": "value-1",
+          "label": "Value 1"
+        },
+        {
+          "value": "value-2",
+          "label": "Value 2"
+        },
+        {
+          "value": "value-3",
+          "label": "Value 3"
+        },
+        {
+          "value": "value-4",
+          "label": "Value 4"
+        }
+      ],
+      "default": "value-1"
+    },
+    {
+      "type": "checkbox",
+      "label": "Checkbox Setting",
+      "id": "checkbox_setting",
+      "default": false
+    },
+    {
+      "type": "radio",
+      "label": "Radio Setting",
+      "id": "radio_setting",
+      "options": [
+        {
+          "value": "radio-1",
+          "label": "Radio 1"
+        },
+        {
+          "value": "radio-2",
+          "label": "Radio 2"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "label": "Color Setting",
+      "id": "color_Setting"
+    },
+    {
+      "type": "color_background",
+      "label": "Color background Setting",
+      "id": "color_background_setting"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image Picker",
+      "id": "image_picker_setting"
+    },
+    {
+      "type": "video",
+      "label": "Video Setting",
+      "id": "video_setting"
+    },
+    {
+      "type": "video_url",
+      "label": "Video URL",
+      "id": "video_url_setting",
+      "accept": ["youtube"],
+      "placeholder": "Youtube URL"
+    },
+    {
+      "type": "url",
+      "label": "URL Setting",
+      "id": "url_setting"
+    },
+    {
+      "type": "html",
+      "label": "HTML Setting",
+      "id": "html_setting"
+    },
+    {
+      "type": "liquid",
+      "id": "liquid_setting",
+      "label": "Liquid Setting"
+    },
+    {
+      "type": "header",
+      "content": "Site resource settings",
+      "info": "Settings related to Shopify resource [Learn more](https://shopify.com)"
+    },
+    {
+      "type": "product",
+      "label": "Product Setting",
+      "id": "product_setting"
+    },
+    {
+      "type": "product_list",
+      "label": "Product List",
+      "id": "product_list_Setting",
+      "limit": 10
+    },
+    {
+      "type": "collection",
+      "label": "Collection Setting",
+      "id": "collection_setting"
+    },
+    {
+      "type": "collection_list",
+      "label": "Collection List Setting",
+      "id": "collection_list_setting"
+    },
+    {
+      "type": "page",
+      "id": "page_setting",
+      "label": "Page Setting"
+    },
+    {
+      "type": "article",
+      "id": "article_setting",
+      "label": "Article Settiing"
+    },
+    {
+      "type": "blog",
+      "id": "blog_setting",
+      "label": "Blog Setting"
+    },
+    {
+      "type": "link_list",
+      "id": "link_list_setting",
+      "label": "Link List Setting"
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment_setting",
+      "label": "Alignment Setting",
+      "default": "center"
+    },
+    {
+      "type": "font_picker",
+      "id": "font_picker",
+      "label": "Font Picker",
+      "default": "assistant_n4"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_schema_setting",
+      "label": "Color Schema Setting"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "label": "Product",
+          "id": "product"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Optional. Will overide the Product's title if defined"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Optional. Will overide the Product's image if defined"
+        }
+      ],
+      "limit": 4
+    },
+    {
+      "type": "section_collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "label": "Collection",
+          "id": "collection"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Optional. Will overide the Collection's title if defined"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Optional. Will overide the Collection's image if defined"
+        }
+      ],
+      "limit": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Tutorial",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
