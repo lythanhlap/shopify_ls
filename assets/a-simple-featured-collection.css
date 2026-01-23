@@ -24,6 +24,25 @@
 .product-image {
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  
+}
+.product_image{
+  position: relative;
+}
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e10600;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 2;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  
 }
 
 .product-item {
@@ -73,6 +92,12 @@
   font-size: 0.65em;
   /* vertical-align: super; */
   margin-left: 2px;
+}
+.compare-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-left: 6px;
 }
 
 /* res */
