@@ -57,7 +57,8 @@
 /* right side */
 .brand-story__images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
+  grid-auto-rows: 1fr;
   gap: 2rem;
 }
 
@@ -67,18 +68,17 @@
   gap: 2rem;
 }
 
-
 .brand-story__image {
   position: relative;
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
-}
 
+}
 
 .brand-story__image img {
   width: 100%;
-  height: 100%;
+  height: auto; /*100%*/
   object-fit: cover;
   display: block;
 }
@@ -86,7 +86,6 @@
 .brand-story__image--sm {
   aspect-ratio: 1 / 1;
 }
-
 
 .brand-story__image-right {
   height: 100%;
@@ -96,9 +95,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
-
-
 
 .brand-story__image iframe {
   position: absolute;
