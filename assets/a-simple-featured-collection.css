@@ -42,8 +42,8 @@
   text-decoration: none;
   color: inherit; /* giữ màu chữ như h3, p */
 }
-.product-item:hover h3{
-    text-decoration: underline;
+.product-item:hover h3 {
+  text-decoration: underline;
 }
 
 .view_all {
@@ -76,13 +76,13 @@
 }
 
 /* res */
-@media (max-width: 768px) {
-  .featured-collection .product-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
 @media (max-width: 990px) {
   .featured-collection .product-grid {
     grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 768px) {
+  .featured-collection .product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
