@@ -37,10 +37,10 @@
         "buttons_zpMhjm": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "Shop now",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -65,10 +65,25 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "brand_story_PCMUAC": {
+      "type": "brand-story",
+      "name": "Brand story",
+      "settings": {
+        "our_story_title": "( Our story )",
+        "heading": "From passionto purpose:Our wellnessjourney",
+        "our_story_description": "<p>Driven by a passion for health and wellness,<br/>we've dedicated ourselves to sourcing the<br/>best natural ingredients and crafting<br/>products that truly supportyour well-being.</p>",
+        "button_link": "shopify://collections",
+        "button_text": "Learn more",
+        "image_sm": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+        "video_url_setting": "https://www.youtube.com/watch?v=1dznKWXkL3E",
+        "image_lg": "shopify://shop_images/self-serve-coffee-shop.jpg"
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_xG7gMY"
+    "image_banner_xG7gMY",
+    "brand_story_PCMUAC"
   ]
 }
