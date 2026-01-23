@@ -23,15 +23,15 @@
         "heading_tJPUGN": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "heading": "<strong>Sky coffee</strong>",
+            "heading_size": "hxl"
           }
         },
         "text_8eq3Qf": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Far away is missing",
+            "text_style": "subtitle"
           }
         },
         "buttons_zpMhjm": {
@@ -53,12 +53,12 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/shop-local.jpg",
+        "image": "shopify://shop_images/a-proud-store-owner-standing-by-their-counter.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "",
         "stack_images_on_mobile": true,
@@ -87,7 +87,9 @@
         "collection": "men-1",
         "heading": "Featured Collection",
         "description": "Featured collection for this winter",
+        "check": false,
         "product_limit": 4,
+        "select_limit": "4",
         "columns_in_row": 4
       }
     }
