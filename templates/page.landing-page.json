@@ -65,10 +65,25 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "brand_story_PCMUAC": {
+      "type": "brand-story",
+      "name": "Brand story",
+      "settings": {
+        "our_story_title": "( Our story )",
+        "heading": "",
+        "our_story_description": "",
+        "button_link": "",
+        "button_text": "Learn more",
+        "image_sm": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+        "video_url_setting": "https://www.youtube.com/watch?v=1dznKWXkL3E",
+        "image_lg": "shopify://shop_images/self-serve-coffee-shop.jpg"
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_xG7gMY"
+    "image_banner_xG7gMY",
+    "brand_story_PCMUAC"
   ]
 }
