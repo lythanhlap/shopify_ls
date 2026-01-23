@@ -79,11 +79,23 @@
         "video_url_setting": "https://www.youtube.com/watch?v=1dznKWXkL3E",
         "image_lg": "shopify://shop_images/self-serve-coffee-shop.jpg"
       }
+    },
+    "a_simple_featured_collection_dDLMyN": {
+      "type": "a-simple-featured-collection",
+      "name": "Simple featured collection",
+      "settings": {
+        "collection": "men-1",
+        "heading": "Featured Collection",
+        "description": "Featured collection for this winter",
+        "product_limit": 4,
+        "columns_in_row": 4
+      }
     }
   },
   "order": [
     "main",
     "image_banner_xG7gMY",
-    "brand_story_PCMUAC"
+    "brand_story_PCMUAC",
+    "a_simple_featured_collection_dDLMyN"
   ]
 }
