@@ -113,7 +113,7 @@
       "name": "Scrolling features",
       "settings": {
         "speed": 20,
-        "color": "",
+        "color": "linear-gradient(217deg, rgba(255, 225, 115, 1) 11%, rgba(255, 70, 199, 1) 81%)",
         "font_size": 18
       }
     },
