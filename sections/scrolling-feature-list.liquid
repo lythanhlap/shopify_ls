@@ -1,0 +1,120 @@
+<style>
+  .feature-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #bf4b4b;
+    /* background: transparent !important; */
+  }
+
+  .feature-track {
+    display: flex;
+    width: max-content;
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .feature-item {
+    padding: 0.5rem 3.2rem !important;
+    font-size: 16px;
+    white-space: nowrap;
+    background: transparent !important;
+    font-weight: 600;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<section class="feature-marquee" style="background: {{section.settings.color}};">
+  <div
+    class="feature-track"
+    style="animation-duration: {{ section.settings.speed }}s;"
+  >
+    {% for block in section.blocks %}
+      <span class="feature-item" style="color: {{block.settings.color}}; font-size:{{section.settings.font_size}}">
+        {{ block.settings.text }}
+      </span>
+    {% endfor %}
+
+    {%- comment -%}
+      Nhân đôi để tạo hiệu ứng chạy vô hạn
+    {%- endcomment -%}
+    {% for block in section.blocks %}
+      <span class="feature-item" style="color: {{block.settings.color}}; font-size:{{section.settings.font_size}}">
+        {{ block.settings.text }}
+      </span>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Scrolling feature list",
+  "settings": [
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Speed (second)",
+      "min": 5,
+      "max": 40,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "color_background",
+      "label": "Color",
+      "id": "color"
+    },
+    {
+      "type": "range",
+      "label": "Font size",
+      "id": "font_size",
+      "min": 10,
+      "max": 30,
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_item",
+      "name": "Feature item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Free shipping "
+        },
+        {
+          "type": "color",
+          "label": "Color",
+          "id": "color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling features",
+      "blocks": [
+        {
+          "type": "feature_item"
+        },
+        {
+          "type": "feature_item"
+        },
+        {
+          "type": "feature_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

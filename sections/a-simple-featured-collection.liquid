@@ -4,30 +4,61 @@
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings.description }}</p>
 
+  {% if section.blocks.size > 0 %}
+    <div class="section-blocks">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'feature' %}
+            <div class="feature-item" {{ block.shopify_attributes }}>
+              <span class="feature-item__title" style="color: {{block.settings.title_color}};">
+                {{- block.settings.feature_title -}}
+              </span>
+              <span class="feature-item__desc">{{ block.settings.feature_desc }}</span>
+            </div>
+
+          {% when 'button' %}
+            <div class="cta-button" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.button_link }}">
+                {{ block.settings.button_text }}
+              </a>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
   {% if section.settings.collection != blank %}
     <div class="product-grid" style="grid-template-columns: repeat({{section.settings.columns_in_row}}, 1fr);">
       {% comment %} if limit by range limit: section.settings.product_limit {% endcomment %}
 
       {% if section.settings.check %}
         {% assign final_limit = section.settings.product_limit %}
-        {% else %}
-          {% assign final_limit = section.settings.select_limit %}
+      {% else %}
+        {% assign final_limit = section.settings.select_limit | plus: 0 %}
       {% endif %}
 
       {% comment %} {% assign final_limit = section.settings.product_limit | default: section.settings.select_limit |  plus: 0%} {% endcomment %}
       {% for product in section.settings.collection.products limit: final_limit %}
         <div class="product-item">
-
           <a href="{{product.url}}">
             <div class="product_image">
               {% if product.compare_at_price > product.price %}
-                <span class="product-badge">Sale</span>
+                <span class="product-badge"
+                  >Sale-
+                  {{-
+                    product.compare_at_price
+                    | minus: product.price
+                    | times: 100
+                    | divided_by: product.compare_at_price
+                  -}}
+                  %</span
+                >
               {% endif %}
               {{ product.featured_image | image_url: width: 500 | image_tag }}
             </div>
 
             <h3 class="product-title">{{ product.title | truncatewords: 4 }}</h3>
-            
+
             <p class="product-price">
               <span class="price-amount">
                 {{ product.price | money_without_currency }}
@@ -79,7 +110,7 @@
       "type": "checkbox",
       "label": "Check to use adjust limit product bby range",
       "id": "check",
-      "default":false
+      "default": false
     },
     {
       "type": "range",
@@ -94,7 +125,7 @@
       "type": "select",
       "label": "Select limit",
       "id": "select_limit",
-      "default":"4",
+      "default": "4",
       "options": [
         {
           "value": "4",
@@ -117,6 +148,48 @@
       "default": 4,
       "min": 2,
       "max": 6
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature_title",
+          "label": "Feature title",
+          "default": "Free Shipping"
+        },
+        {
+          "type": "color",
+          "label": "Title color",
+          "id": "title_color"
+        },
+        {
+          "type": "text",
+          "id": "feature_desc",
+          "label": "Feature description",
+          "default": "On all orders"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "CTA button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "View all products"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
     }
   ],
   "presets": [
