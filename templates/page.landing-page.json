@@ -80,6 +80,43 @@
         "image_lg": "shopify://shop_images/self-serve-coffee-shop.jpg"
       }
     },
+    "scrolling_feature_list_ppky3d": {
+      "type": "scrolling-feature-list",
+      "blocks": {
+        "feature_item_QkCJFT": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Free shipping",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_LLX7qb": {
+          "type": "feature_item",
+          "settings": {
+            "text": "High quility",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_XimWxm": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Support 24/7",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_QkCJFT",
+        "feature_item_LLX7qb",
+        "feature_item_XimWxm"
+      ],
+      "name": "Scrolling features",
+      "settings": {
+        "speed": 20,
+        "color": "",
+        "font_size": 18
+      }
+    },
     "a_simple_featured_collection_dDLMyN": {
       "type": "a-simple-featured-collection",
       "name": "Simple featured collection",
@@ -98,6 +135,7 @@
     "main",
     "image_banner_xG7gMY",
     "brand_story_PCMUAC",
+    "scrolling_feature_list_ppky3d",
     "a_simple_featured_collection_dDLMyN"
   ]
 }
