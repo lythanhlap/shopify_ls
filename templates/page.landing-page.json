@@ -126,7 +126,7 @@
         "description": "Featured collection for this winter",
         "check": false,
         "product_limit": 4,
-        "select_limit": "4",
+        "select_limit": "8",
         "columns_in_row": 4
       }
     },
