@@ -27,7 +27,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
   }
 </style>
@@ -38,14 +38,11 @@
     style="animation-duration: {{ section.settings.speed }}s;"
   >
     {% for block in section.blocks %}
-      <span class="feature-item" style="color: {{block.settings.color}}; font-size:{{section.settings.font_size}}">
+      <span class="feature-item" style="color: {{block.settings.color}}; font-size:{{section.settings.font_size}}px">
         {{ block.settings.text }}
       </span>
     {% endfor %}
 
-    {%- comment -%}
-      Nhân đôi để tạo hiệu ứng chạy vô hạn
-    {%- endcomment -%}
     {% for block in section.blocks %}
       <span class="feature-item" style="color: {{block.settings.color}}; font-size:{{section.settings.font_size}}">
         {{ block.settings.text }}
