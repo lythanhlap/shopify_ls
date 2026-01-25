@@ -3,7 +3,7 @@
 }
 
 .testimonial__container {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -37,9 +37,11 @@
   border-radius: 1.6rem;
   border: 0.1rem solid #e5e5e5;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 .testimonial__item:hover{
   cursor: pointer;
+  transform: translateY(-4px);
 }
 
 /* image */
