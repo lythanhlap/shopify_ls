@@ -129,6 +129,127 @@
         "select_limit": "4",
         "columns_in_row": 4
       }
+    },
+    "testimonial_94eYqH": {
+      "type": "testimonial",
+      "blocks": {
+        "review_Q99Rc4": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/man-in-suit-on-stairs.jpg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/man-in-suit-on-stairs.jpg",
+            "name": "Alex Bruce",
+            "verified": true
+          }
+        },
+        "review_Drh8CA": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/woman-in-park-afternoon.jpeg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
+            "name": "Alice",
+            "verified": true
+          }
+        },
+        "review_V7f7CR": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/portrait-of-young-woman-in-autumn-colored-coat.jpg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/model-in-sunglasses-and-summer-clothes.jpg",
+            "name": "Taylor",
+            "verified": true
+          }
+        },
+        "review_bebGtK": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/two-woman-hold-hands-outside-while-facing-each-other.jpg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/fashion-model-in-fur.jpg",
+            "name": "Bramy",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_Q99Rc4",
+        "review_Drh8CA",
+        "review_V7f7CR",
+        "review_bebGtK"
+      ],
+      "name": "Customer review(testimonial)",
+      "settings": {
+        "heading": "Customer reviews"
+      }
+    },
+    "collapsible_content_zkqPQL": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_XNfY4L": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ques1",
+            "icon": "none",
+            "row_content": "<p>ans</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VyWcQA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "q",
+            "icon": "none",
+            "row_content": "<p>ans</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NHe6qb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ques",
+            "icon": "none",
+            "row_content": "<p>ans</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Kq33XP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ques",
+            "icon": "none",
+            "row_content": "<p>ans</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_XNfY4L",
+        "collapsible_row_VyWcQA",
+        "collapsible_row_NHe6qb",
+        "collapsible_row_Kq33XP"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -136,6 +257,8 @@
     "image_banner_xG7gMY",
     "brand_story_PCMUAC",
     "scrolling_feature_list_ppky3d",
-    "a_simple_featured_collection_dDLMyN"
+    "a_simple_featured_collection_dDLMyN",
+    "testimonial_94eYqH",
+    "collapsible_content_zkqPQL"
   ]
 }
