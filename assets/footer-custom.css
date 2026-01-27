@@ -81,8 +81,12 @@
 .footer-custom__menu {
   list-style: none;
   padding: 0;
+}
+
+.footer-custom__menu li {
   margin: 0;
 }
+
 
 @media (min-width: 901px) {
   .footer-custom__menu {
