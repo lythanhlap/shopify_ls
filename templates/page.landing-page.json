@@ -282,10 +282,10 @@
         "collapsible_row_XNfY4L": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "ques1",
+            "heading": "How can I track my order?",
             "heading_size1": 16,
             "icon": "none",
-            "row_content": "<p>ans</p>",
+            "row_content": "<p>Once your order ships, you will receive an email with a tracking link to follow your package in real-time.<br/></p>",
             "text_size": 16,
             "page": ""
           }
@@ -293,10 +293,10 @@
         "collapsible_row_VyWcQA": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "q",
+            "heading": "What is your return policy?",
             "heading_size1": 16,
             "icon": "none",
-            "row_content": "<p>ans</p>",
+            "row_content": "<p>We offer a 30-day return policy for all unused items in their original packaging.<br/><br/></p>",
             "text_size": 16,
             "page": ""
           }
@@ -304,10 +304,10 @@
         "collapsible_row_NHe6qb": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "ques",
+            "heading": "Do you ship internationally?",
             "heading_size1": 16,
             "icon": "none",
-            "row_content": "<p>ans</p>",
+            "row_content": "<p>Yes, we ship to over 50 countries worldwide. Shipping costs and times vary by location.</p>",
             "text_size": 16,
             "page": ""
           }
@@ -315,10 +315,10 @@
         "collapsible_row_Kq33XP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "ques",
+            "heading": "How can I change my shipping address?",
             "heading_size1": 16,
             "icon": "none",
-            "row_content": "<p>ans</p>",
+            "row_content": "<p>Please contact our support team within 2 hours of placing your order to update your details.</p>",
             "text_size": 16,
             "page": ""
           }
