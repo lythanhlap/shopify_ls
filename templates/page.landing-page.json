@@ -24,14 +24,16 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Black shop</strong>",
-            "heading_size": "hxl"
+            "heading_size": "hxl",
+            "heading_color": ""
           }
         },
         "text_8eq3Qf": {
           "type": "text",
           "settings": {
             "text": "Far away is missing",
-            "text_style": "subtitle"
+            "text_style": "subtitle",
+            "text_color": ""
           }
         },
         "buttons_zpMhjm": {
@@ -40,6 +42,7 @@
             "button_label_1": "Shop now",
             "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
+            "btn_text_color": "",
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -233,8 +236,10 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "ques1",
+            "heading_size1": 16,
             "icon": "none",
             "row_content": "<p>ans</p>",
+            "text_size": 16,
             "page": ""
           }
         },
@@ -242,8 +247,10 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "q",
+            "heading_size1": 16,
             "icon": "none",
             "row_content": "<p>ans</p>",
+            "text_size": 16,
             "page": ""
           }
         },
@@ -251,8 +258,10 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "ques",
+            "heading_size1": 16,
             "icon": "none",
             "row_content": "<p>ans</p>",
+            "text_size": 16,
             "page": ""
           }
         },
@@ -260,8 +269,10 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "ques",
+            "heading_size1": 16,
             "icon": "none",
             "row_content": "<p>ans</p>",
+            "text_size": 16,
             "page": ""
           }
         }
@@ -287,6 +298,44 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "footer_custom_rMEgW9": {
+      "type": "footer-custom",
+      "blocks": {
+        "menu_RbYBUD": {
+          "type": "menu",
+          "settings": {
+            "title": "About us",
+            "menu": "main-menu"
+          }
+        },
+        "social_Ci6Vgf": {
+          "type": "social",
+          "settings": {
+            "social_link": "https://facebook.com/shopify",
+            "social_name": "Facebook"
+          }
+        },
+        "social_D3C4XV": {
+          "type": "social",
+          "settings": {
+            "social_link": "https://instagram.com/shopify",
+            "social_name": "Instagram"
+          }
+        }
+      },
+      "block_order": [
+        "menu_RbYBUD",
+        "social_Ci6Vgf",
+        "social_D3C4XV"
+      ],
+      "name": "Footer Custom",
+      "settings": {
+        "logo_text": "Black shop",
+        "email": "blackshop@ecom.com",
+        "phone": "999999999",
+        "newsletter_text": "Sign up for sale, new arrivals & more"
+      }
     }
   },
   "order": [
@@ -297,6 +346,7 @@
     "scrolling_feature_list_ppky3d",
     "a_simple_featured_collection_dDLMyN",
     "testimonial_94eYqH",
-    "collapsible_content_zkqPQL"
+    "collapsible_content_zkqPQL",
+    "footer_custom_rMEgW9"
   ]
 }

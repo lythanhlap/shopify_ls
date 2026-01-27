@@ -11,46 +11,9 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer_custom_TbHGyy": {
-      "type": "footer-custom",
-      "blocks": {
-        "menu_8MbNWQ": {
-          "type": "menu",
-          "settings": {
-            "title": "About us",
-            "menu": "main-menu"
-          }
-        },
-        "social_tTFt6w": {
-          "type": "social",
-          "settings": {
-            "social_link": "https://facebook.com/shopify",
-            "social_name": "Facebook"
-          }
-        },
-        "social_7rnXWR": {
-          "type": "social",
-          "settings": {
-            "social_link": "https://instagram.com/shopify",
-            "social_name": "Instagram"
-          }
-        }
-      },
-      "block_order": [
-        "menu_8MbNWQ",
-        "social_tTFt6w",
-        "social_7rnXWR"
-      ],
-      "name": "Footer Custom",
-      "settings": {
-        "logo_text": "Black shop",
-        "email": "blackshop@ecom.com",
-        "phone": "999999999",
-        "newsletter_text": "Sign up for sale, new arrivals & more"
-      }
-    },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
@@ -68,7 +31,6 @@
     }
   },
   "order": [
-    "footer_custom_TbHGyy",
     "footer"
   ]
 }
