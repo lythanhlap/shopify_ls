@@ -19,7 +19,7 @@
 }
 
 .testimonial__viewport {
-  overflow: hidden; 
+  overflow: hidden;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-.testimonial__item:hover{
+.testimonial__item:hover {
   cursor: pointer;
   transform: translateY(-4px);
 }
@@ -140,7 +140,16 @@
     display: none;
   }
 
-  .testimonial__item {
+  /* .testimonial__item {
     width: 85%;
+  } */
+  .testimonial__track {
+    gap: 0;
   }
+
+  .testimonial__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
 }

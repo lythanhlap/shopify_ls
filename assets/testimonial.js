@@ -83,6 +83,42 @@ document.addEventListener("DOMContentLoaded", () => {
       track.style.transform = `translateX(-${index * itemWidth}px)`;
     });
 
+    // mobile swipe
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+    const swipeThreshold = 40; // minium swipe
+
+    viewport.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+      track.style.transition = "none";
+    });
+
+    viewport.addEventListener("touchmove", (e) => {
+      if (!isDragging) return;
+      currentX = e.touches[0].clientX;
+      const diff = currentX - startX;
+      track.style.transform = `translateX(${-(index * itemWidth) + diff}px)`;
+    });
+
+    viewport.addEventListener("touchend", () => {
+      if (!isDragging) return;
+      isDragging = false;
+
+      const diff = currentX - startX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff < 0) {
+          nextBtn.click(); // swipe left -> next
+        } else {
+          prevBtn.click(); // swipe right -> prev
+        }
+      } else {
+        move(true); 
+      }
+    });
+
     init();
   });
 });

@@ -1,0 +1,141 @@
+.footer-custom {
+  background: #000;
+  color: #fff;
+  padding: 6rem 0 3rem;
+  font-size: 1.4rem;
+}
+
+.footer-custom a {
+  color: #fff;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.footer-custom a:hover {
+  opacity: 1;
+}
+
+.footer-custom__container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 6rem;
+}
+
+/* left */
+.footer-custom__logo {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+
+.footer-custom__newsletter {
+  margin-top: 3rem;
+}
+
+.footer-custom__form {
+  margin-top: 1.6rem;
+  display: flex;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer-custom__form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 1.2rem;
+  color: #fff;
+}
+
+.footer-custom__form button {
+  background: #ff2d2d;
+  color: #fff;
+  border: none;
+  padding: 0 2.4rem;
+  cursor: pointer;
+}
+
+/* right */
+.footer-custom__title {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.footer-custom__icon {
+  display: none;
+}
+
+.footer-custom__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 901px) {
+  .footer-custom__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 1.4rem;
+  }
+}
+
+/* bottom */
+.footer-custom__bottom {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #222;
+  max-width: 130rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-custom__payments svg {
+  height: 28px;
+  margin-left: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .footer-custom__container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-custom__icon {
+    display: inline-block;
+  }
+
+  .footer-custom__menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .footer-custom__col.active .footer-custom__menu {
+    max-height: 300px;
+  }
+
+  .footer-custom__col.active .footer-custom__icon {
+    transform: rotate(45deg);
+  }
+
+  .footer-custom__bottom {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}

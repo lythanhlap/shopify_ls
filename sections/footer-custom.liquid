@@ -1,0 +1,149 @@
+{{'footer-custom.css'| asset_url |  stylesheet_tag}}
+
+<footer class="footer-custom">
+  <div class="footer-custom__container">
+    {% comment %} left {% endcomment %}
+    <div class="footer-custom__left">
+      <h2 class="footer-custom__logo" style="color: white;">
+        {{ section.settings.logo_text -}}
+      </h2>
+      <p>
+        Email:
+        <a href="mailto:{{ section.settings.email }}">
+          {{ section.settings.email }}
+        </a>
+      </p>
+      <p>
+        Phone:
+        <a href="tel:{{ section.settings.phone }}">
+          {{ section.settings.phone }}
+        </a>
+      </p>
+      <div class="footer-custom__newsletter">
+        <p>{{ section.settings.newsletter_text }}</p>
+
+        {% form 'customer', class: 'footer-custom__form' %}
+          <input
+            type="hidden"
+            name="contact[tags]"
+            value="newsletter"
+          >
+          <input
+            type="email"
+            name="contact[email]"
+            placeholder="Email address"
+            required
+          >
+          <button type="submit">Sign up</button>
+        {% endform %}
+      </div>
+    </div>
+
+    {% comment %} right {% endcomment %}
+    <div class="footer-custom__right">
+      {% for block in section.blocks %}
+        <div class="footer-custom__col" {{ block.shopify_attributes }}>
+          <button class="footer-custom__title">
+            {{ block.settings.title }}
+            <span class="footer-custom__icon">+</span>
+          </button>
+          <ul class="footer-custom__menu">
+            {% for link in linklists[block.settings.menu].links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% comment %} bootom {% endcomment %}
+  <div class="footer-custom__bottom">
+    <div class="footer-custom__socials">
+      {% for block in section.blocks %}
+      {% if block.type == 'social' %}
+        <a href="{{block.settings.social_link}}" style="color: white;">{{block.settings.social_name}}</a>
+      {% endif %}
+    {% endfor %}
+    </div>
+    <div class="footer-custom__payments">
+      {% for type in shop.enabled_payment_types %}
+        {{ type | payment_type_svg_tag }}
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer Custom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo text",
+      "default": "Black shop"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+      "default": "blackshop@ecom.com"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone",
+      "default": "999999999"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_text",
+      "label": "Newsletter text",
+      "default": "Sign up for sale, new arrivals & more"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Footer menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "About us"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    },
+    {
+        "type": "social",
+        "name": "Socials",
+        "settings": [
+            {
+                "type": "url",
+                "label": "Social link",
+                "id": "social_link"
+            },
+            {
+                "type": "text",
+                "label": "Social name",
+                "id": "social_name"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer Custom"
+    }
+  ]
+}
+{% endschema %}

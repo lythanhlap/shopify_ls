@@ -64,7 +64,7 @@
 
 .product-item a {
   text-decoration: none;
-  color: inherit; /* giữ màu chữ như h3, p */
+  color: inherit; 
 }
 .product-item:hover h3 {
   text-decoration: underline;
