@@ -38,7 +38,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop now",
-            "button_link_1": "",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -66,17 +66,54 @@
         "show_text_below": true
       }
     },
+    "scrolling_feature_list_Xx8qbr": {
+      "type": "scrolling-feature-list",
+      "blocks": {
+        "feature_item_4TfFzY": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Free shipping",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_reRx6L": {
+          "type": "feature_item",
+          "settings": {
+            "text": "High quility",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_XMmtLq": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Support 24/7",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_4TfFzY",
+        "feature_item_reRx6L",
+        "feature_item_XMmtLq"
+      ],
+      "name": "Scrolling features",
+      "settings": {
+        "speed": 34,
+        "color": "linear-gradient(60deg, rgba(165, 158, 185, 1) 26%, rgba(13, 12, 17, 1) 99%)",
+        "font_size": 20
+      }
+    },
     "brand_story_PCMUAC": {
       "type": "brand-story",
       "name": "Brand story",
       "settings": {
         "our_story_title": "( Our story )",
         "heading": "From passionto purpose:Our wellnessjourney",
-        "our_story_description": "<p>Driven by a passion for health and wellness,<br/>we've dedicated ourselves to sourcing the<br/>best natural ingredients and crafting<br/>products that truly supportyour well-being.</p>",
+        "our_story_description": "<p>Driven by a genuine passion for health and mindful living, we began our journey with a simple belief: wellness should feel natural, honest, and effortless.</p><p>We carefully source high-quality, clean ingredients and craft products that support your everyday well-being — helping you feel balanced, energized, and connected to yourself, one small ritual at a time.</p>",
         "button_link": "shopify://collections",
         "button_text": "Learn more",
         "image_sm": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
-        "video_url_setting": "https://www.youtube.com/watch?v=1dznKWXkL3E",
+        "video_url_setting": "https://youtu.be/-d-I2is489U?si=2XwKnfEUfbpaAu-n",
         "image_lg": "shopify://shop_images/self-serve-coffee-shop.jpg"
       }
     },
@@ -122,7 +159,7 @@
       "name": "Simple featured collection",
       "settings": {
         "collection": "men-1",
-        "heading": "Featured Collection",
+        "heading": "Featured Collections",
         "description": "Featured collection for this winter",
         "check": false,
         "product_limit": 4,
@@ -255,6 +292,7 @@
   "order": [
     "main",
     "image_banner_xG7gMY",
+    "scrolling_feature_list_Xx8qbr",
     "brand_story_PCMUAC",
     "scrolling_feature_list_ppky3d",
     "a_simple_featured_collection_dDLMyN",
