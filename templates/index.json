@@ -9,22 +9,32 @@
  */
 {
   "sections": {
-    "image_banner": {
+    "image_banner_P6UMRP": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
+        "heading_y9bt7Y": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products live theme changes",
-            "heading_size": "h0"
+            "heading": "<strong>Black shop</strong>",
+            "heading_size": "hxl",
+            "heading_color": ""
           }
         },
-        "button": {
+        "text_DKUBHt": {
+          "type": "text",
+          "settings": {
+            "text": "Far away is missing",
+            "text_style": "subtitle",
+            "text_color": ""
+          }
+        },
+        "buttons_mA6e7j": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "btn_text_color": "",
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -32,25 +42,129 @@
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading_y9bt7Y",
+        "text_DKUBHt",
+        "buttons_mA6e7j"
       ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/a-barista-smiles-proudly-stood-in-her-cafe.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image": "shopify://shop_images/a-proud-store-owner-standing-by-their-counter.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": true
+      }
+    },
+    "scrolling_feature_list_Ndmbef": {
+      "type": "scrolling-feature-list",
+      "blocks": {
+        "feature_item_TgnMMD": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Free shipping",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_zdDaJw": {
+          "type": "feature_item",
+          "settings": {
+            "text": "High quility",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_LF3Gb9": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Support 24/7",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_TgnMMD",
+        "feature_item_zdDaJw",
+        "feature_item_LF3Gb9"
+      ],
+      "name": "Scrolling features",
+      "settings": {
+        "speed": 34,
+        "color": "linear-gradient(60deg, rgba(165, 158, 185, 1) 26%, rgba(13, 12, 17, 1) 99%)",
+        "font_size": 20
+      }
+    },
+    "brand_story_azNphe": {
+      "type": "brand-story",
+      "name": "Brand story",
+      "settings": {
+        "our_story_title": "( Our story )",
+        "heading": "From passionto purpose:Our wellnessjourney",
+        "our_story_description": "<p>Driven by a genuine passion for health and mindful living, we began our journey with a simple belief: wellness should feel natural, honest, and effortless.</p><p>We carefully source high-quality, clean ingredients and craft products that support your everyday well-being — helping you feel balanced, energized, and connected to yourself, one small ritual at a time.</p>",
+        "button_link": "shopify://collections",
+        "button_text": "Learn more",
+        "image_sm": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+        "video_url_setting": "https://youtu.be/-d-I2is489U?si=2XwKnfEUfbpaAu-n",
+        "image_lg": "shopify://shop_images/self-serve-coffee-shop.jpg"
+      }
+    },
+    "scrolling_feature_list_YCq9AK": {
+      "type": "scrolling-feature-list",
+      "blocks": {
+        "feature_item_RxeC6F": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Free shipping",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_4NfmLD": {
+          "type": "feature_item",
+          "settings": {
+            "text": "High quility",
+            "color": "#ffffff"
+          }
+        },
+        "feature_item_aBfxBP": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Support 24/7",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_RxeC6F",
+        "feature_item_4NfmLD",
+        "feature_item_aBfxBP"
+      ],
+      "name": "Scrolling features",
+      "settings": {
+        "speed": 20,
+        "color": "linear-gradient(217deg, rgba(255, 225, 115, 1) 11%, rgba(255, 70, 199, 1) 81%)",
+        "font_size": 18
+      }
+    },
+    "a_simple_featured_collection_p7FnUb": {
+      "type": "a-simple-featured-collection",
+      "name": "Simple featured collection",
+      "settings": {
+        "collection": "men-1",
+        "heading": "Featured Collections",
+        "description": "Featured collection for this winter",
+        "check": false,
+        "product_limit": 4,
+        "select_limit": "8",
+        "columns_in_row": 4
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "all",
         "products_to_show": 8,
@@ -77,98 +191,231 @@
         "padding_bottom": 36
       }
     },
-    "promotions_group_BVT9M4": {
-      "type": "promotions-group",
+    "multirow_tyexAJ": {
+      "type": "multirow",
       "blocks": {
-        "promotion_kX3Q9r": {
-          "type": "promotion",
+        "row_p73mR6": {
+          "type": "row",
           "settings": {
-            "title": "my promotion 2",
-            "image": "shopify://shop_images/woman-in-white-dress-outside.jpg"
+            "image": "shopify://shop_images/woman-in-sports-clothes-stands-on-a-beach-in-the-morning-light.jpg",
+            "caption": "",
+            "heading": "Elevate Your Wardrobe with Quality Clothes.",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Order now",
+            "button_link": "shopify://products/adidas-classic-backpack-legend-ink-multicolour"
           }
         },
-        "promotion_j6W3wz": {
-          "type": "promotion",
+        "row_bYBB7m": {
+          "type": "row",
           "settings": {
-            "title": "my promotion 1",
-            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg"
+            "image": "shopify://shop_images/mens-fashion-close-up-shirt-tucked-in-leaning.jpg",
+            "caption": "",
+            "heading": "Elevate Your Wardrobe with Quality Men's Clothing",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Order now",
+            "button_link": "shopify://products/adidas-kids-stan-smith"
           }
         }
       },
       "block_order": [
-        "promotion_kX3Q9r",
-        "promotion_j6W3wz"
+        "row_p73mR6",
+        "row_bYBB7m"
       ],
-      "name": "Promotions Group",
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "title": "Promotion 1",
-        "title_alignment": "center"
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "scheme-aeb71c69-5dae-4a16-9bee-de4f05ea7ac5",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "a_tutorial_section_mETycU": {
-      "type": "a-tutorial-section",
+    "testimonial_dtD9H7": {
+      "type": "testimonial",
       "blocks": {
-        "section_collection_mmtdNj": {
-          "type": "section_collection",
+        "review_xNMjpD": {
+          "type": "review",
           "settings": {
-            "collection": "",
-            "title": "This is the first collection",
-            "image": "shopify://shop_images/fashion-model-in-pink.jpg"
+            "image": "shopify://shop_images/man-in-suit-on-stairs.jpg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/man-in-suit-on-stairs.jpg",
+            "name": "Alex Bruce",
+            "verified": true
           }
         },
-        "section_product_jUp9M6": {
-          "type": "section_product",
+        "review_krBR8g": {
+          "type": "review",
           "settings": {
-            "product": "",
-            "title": "This is the first pproduct",
-            "image": "shopify://shop_images/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg"
+            "image": "shopify://shop_images/woman-in-park-afternoon.jpeg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
+            "name": "Alice",
+            "verified": true
+          }
+        },
+        "review_NkpDhq": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/portrait-of-young-woman-in-autumn-colored-coat.jpg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/model-in-sunglasses-and-summer-clothes.jpg",
+            "name": "Taylor",
+            "verified": true
+          }
+        },
+        "review_UEXWYw": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/two-woman-hold-hands-outside-while-facing-each-other.jpg",
+            "rating": 5,
+            "text": "This product is so amazing good job!",
+            "avatar": "shopify://shop_images/fashion-model-in-fur.jpg",
+            "name": "Bramy",
+            "verified": true
           }
         }
       },
       "block_order": [
-        "section_collection_mmtdNj",
-        "section_product_jUp9M6"
+        "review_xNMjpD",
+        "review_krBR8g",
+        "review_NkpDhq",
+        "review_UEXWYw"
       ],
-      "name": "Section Tutorial",
+      "name": "Customer review(testimonial)",
       "settings": {
-        "text_setting": "This is my text setting",
-        "textarea_setting": "This is text area",
-        "richtext_setting": "<p>Expertly Crafted Clothes f<em><strong>or Every Occasion.</strong></em></p>",
-        "number_setting": 4,
-        "range_setting": 50,
-        "select_setting": "value-1",
-        "checkbox_setting": false,
-        "radio_setting": "radio-1",
-        "color_Setting": "#4693dc",
-        "color_background_setting": "linear-gradient(88deg, rgba(246, 223, 231, 1), rgba(168, 255, 251, 1) 100%)",
-        "image_picker_setting": "shopify://shop_images/shellfish-pasta-pizza-and-italian-food.jpg",
-        "video_setting": "shopify://files/videos/Video_Gấu_Đứng_Dậy.mp4",
-        "video_url_setting": "https://www.youtube.com/watch?v=3n5sWA2ow1Q&list=PLsr48ksn9_9Bzii-fRXRTVAo3OPYTtMAU&index=5",
-        "url_setting": "",
-        "html_setting": "<strong> this is bold sectence </strong>",
-        "liquid_setting": "{{10 | plus: 10 }}",
-        "product_setting": "adidas-classic-backpack",
-        "product_list_Setting": [
-          "adidas-classic-backpack-legend-ink-multicolour",
-          "asics-tiger-gel-lyte-v-30-years-of-gel-pack",
-          "adidas-superstar-80s"
-        ],
-        "collection_setting": "adidas",
-        "collection_list_setting": [],
-        "page_setting": "about-us",
-        "article_setting": "",
-        "blog_setting": "",
-        "link_list_setting": "",
-        "alignment_setting": "center",
-        "font_picker": "assistant_n4",
-        "color_schema_setting": ""
+        "heading": "Customer reviews"
+      }
+    },
+    "collapsible_content_FyU4Fa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_DMiLmr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I track my order?",
+            "heading_size1": 16,
+            "icon": "none",
+            "row_content": "<p>Once your order ships, you will receive an email with a tracking link to follow your package in real-time.<br/></p>",
+            "text_size": 16,
+            "page": ""
+          }
+        },
+        "collapsible_row_pemD8e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "heading_size1": 16,
+            "icon": "none",
+            "row_content": "<p>We offer a 30-day return policy for all unused items in their original packaging.<br/><br/></p>",
+            "text_size": 16,
+            "page": ""
+          }
+        },
+        "collapsible_row_tQx3MV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "heading_size1": 16,
+            "icon": "none",
+            "row_content": "<p>Yes, we ship to over 50 countries worldwide. Shipping costs and times vary by location.</p>",
+            "text_size": 16,
+            "page": ""
+          }
+        },
+        "collapsible_row_UAz7xr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I change my shipping address?",
+            "heading_size1": 16,
+            "icon": "none",
+            "row_content": "<p>Please contact our support team within 2 hours of placing your order to update your details.</p>",
+            "text_size": 16,
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_DMiLmr",
+        "collapsible_row_pemD8e",
+        "collapsible_row_tQx3MV",
+        "collapsible_row_UAz7xr"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "footer_custom_JrYHr8": {
+      "type": "footer-custom",
+      "blocks": {
+        "menu_Jja4xh": {
+          "type": "menu",
+          "settings": {
+            "title": "About us",
+            "menu": "main-menu"
+          }
+        },
+        "social_QJWtce": {
+          "type": "social",
+          "settings": {
+            "social_link": "https://facebook.com/shopify",
+            "social_name": "Facebook"
+          }
+        },
+        "social_3DEEfU": {
+          "type": "social",
+          "settings": {
+            "social_link": "https://instagram.com/shopify",
+            "social_name": "Instagram"
+          }
+        }
+      },
+      "block_order": [
+        "menu_Jja4xh",
+        "social_QJWtce",
+        "social_3DEEfU"
+      ],
+      "name": "Footer Custom",
+      "settings": {
+        "logo_text": "Black shop",
+        "email": "blackshop@ecom.com",
+        "phone": "999999999",
+        "newsletter_text": "Sign up for sale, new arrivals & more"
       }
     }
   },
   "order": [
-    "image_banner",
+    "image_banner_P6UMRP",
+    "scrolling_feature_list_Ndmbef",
+    "brand_story_azNphe",
+    "scrolling_feature_list_YCq9AK",
+    "a_simple_featured_collection_p7FnUb",
     "featured_collection",
-    "promotions_group_BVT9M4",
-    "a_tutorial_section_mETycU"
+    "multirow_tyexAJ",
+    "testimonial_dtD9H7",
+    "collapsible_content_FyU4Fa",
+    "footer_custom_JrYHr8"
   ]
 }
