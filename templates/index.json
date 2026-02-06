@@ -115,6 +115,13 @@
     "scrolling_feature_list_YCq9AK": {
       "type": "scrolling-feature-list",
       "blocks": {
+        "feature_item_X6NA6n": {
+          "type": "feature_item",
+          "settings": {
+            "text": "Free shipping 24/7",
+            "color": ""
+          }
+        },
         "feature_item_RxeC6F": {
           "type": "feature_item",
           "settings": {
@@ -138,6 +145,7 @@
         }
       },
       "block_order": [
+        "feature_item_X6NA6n",
         "feature_item_RxeC6F",
         "feature_item_4NfmLD",
         "feature_item_aBfxBP"
